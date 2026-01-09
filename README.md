@@ -13,30 +13,6 @@ FEATURES:
 - Bootstrap 5, custom CSS, and background image
 - ML pipeline with OneHotEncoder & ColumnTransformer
 
-PROJECT STRUCTURE:
-real_estate_price_prediction/
-│
-├── ml_model/
-│   ├── data/Housing.csv
-│   ├── train_model.py
-│   └── house_price_model.pkl
-│
-├── realestate_project/
-│   ├── manage.py
-│   ├── realestate_project/
-│   └── prediction_app/
-│       ├── models.py
-│       ├── views.py
-│       ├── urls.py
-│       ├── templates/
-│       │   ├── input_form.html
-│       │   └── result.html
-│       ├── static/
-│       │   ├── style.css
-│       │   └── images/
-│       └── house_price_model.pkl
-│
-└── README.md
 
 INSTALLATION:
 1. Clone the repo:
