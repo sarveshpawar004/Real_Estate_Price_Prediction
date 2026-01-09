@@ -1,0 +1,17 @@
+env/
+__pycache__/
+*.pyc
+*.pkl
+*.sqlite3
+*.log
+*.DS_Store
+
+# Django
+/staticfiles/
+/media/
+
+# VSCode
+.vscode/
+
+# Python
+*.egg-info/

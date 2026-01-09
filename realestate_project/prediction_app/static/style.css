@@ -1,0 +1,106 @@
+/* Background image */
+body {
+    background: 
+        linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)),
+        url('/static/images/city-bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Glassmorphism card */
+.card {
+    background: rgba(255, 255, 255, 0.12);      /* transparent */
+    backdrop-filter: blur(12px);               /* blur glass effect */
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 18px;
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+/* Form labels color */
+.form-label {
+    color: white;
+    font-weight: 500;
+}
+
+/* Make inputs glass too */
+.form-control, .form-select {
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: black;
+    font-weight: 500;
+}
+
+.form-control::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* Navbar transparent */
+.navbar {
+    background: rgba(0, 0, 0, 0.55) !important;
+    backdrop-filter: blur(6px);
+}
+
+/* Title */
+h2 {
+    color: white;
+    font-weight: 600;
+}
+/* Background ONLY for result page */
+.result-bg {
+    background: 
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
+        url('/static/images/view-city-with-buildings-trees.jpg');  /* Change image here */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Typing Animation */
+.typing-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid rgba(255,255,255,0.75);
+    width: 0;
+    animation: typing 2s steps(25, end) forwards,
+               blink 0.75s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 320px } /* length of the heading */
+}
+
+/* Cursor blink */
+@keyframes blink {
+    50% { border-color: transparent }
+}
+/* Center container for typing animation */
+.typing-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Adjust typing width so it stays centered */
+.typing-title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Make sure the animation width matches text length */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 320px; } /* adjust if text changes */
+}
