@@ -31,10 +31,7 @@ preprocessor = ColumnTransformer(
 )
 
 # Create a pipeline: Preprocessing + Linear Regression
-model = Pipeline(steps=[
-    ('preprocessor', preprocessor),
-    ('regressor', LinearRegression())
-])
+model = Pipeline(steps=[('preprocessor', preprocessor),('regressor', LinearRegression())])
 
 # Train/test split
 X_train, X_test, y_train, y_test = train_test_split(
